@@ -7,7 +7,7 @@
 .container-flex {
   display: flex;
 }
-#navi, #browse {
+#navi, #browse, #player {
   float: left;
 }
 /* REGOLE LATO DELLA PAGINA */
@@ -19,8 +19,8 @@
 /* REGOLE CORPO DELLA PAGINA */
 #browse {
   background-color: #141922;
+  width: calc(100% - 20%);
   height: calc(100vh - 90px);
-  margin-left: 20%;
 }
 /* REGOLE PLAYER */
 #player {
