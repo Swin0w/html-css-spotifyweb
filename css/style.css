@@ -7,20 +7,66 @@
 .container-flex {
   display: flex;
 }
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
 #navi, #browse, #player {
   float: left;
 }
 /* REGOLE LATO DELLA PAGINA */
 #navi {
   background-color: #000;
-  width: 20%;
+  width: 15%;
   height: calc(100vh - 90px);
+}
+#flexible {
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+#navi ul {
+  list-style-type: none;
+  line-height: 30px;
+  vertical-align: middle;
+  /* display: flex;
+  flex-direction: column;
+  align-items: baseline; */
+}
+#navi ul li {
+  letter-spacing: 2px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+#navi ul li a {
+  text-decoration: none;
+  color: white;
+}
+/* IMMAGINI */
+#spotify {
+  width: 60%;
+  height: 100px;
+}
+.h-s-l {
+  width: 30px;
+  height: 30px;
 }
 /* REGOLE CORPO DELLA PAGINA */
 #browse {
   background-color: #141922;
-  width: calc(100% - 20%);
+  width: calc(100% - 15%);
   height: calc(100vh - 90px);
+}
+/* BANNER IN FIXED */
+#upgrade {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: calc(100% - 15%);
+  height: 90px;
+  position: fixed;
+}
+#upgrade button {
+  position: absolute;
+  top: 50%;
+  left: 85%;
 }
 /* REGOLE PLAYER */
 #player {
