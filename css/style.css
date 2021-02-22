@@ -19,42 +19,64 @@ body {
   width: 15%;
   height: calc(100vh - 90px);
 }
-#flexible {
+#flexible-navi {
   width: 90%;
   margin: 0 auto;
   flex-direction: column;
 }
 #navi ul {
   list-style-type: none;
-  line-height: 30px;
-  vertical-align: middle;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: baseline; */
+  align-items: flex-start;
+  align-content: center;
 }
 #navi ul li {
   letter-spacing: 2px;
-  line-height: 30px;
-  vertical-align: middle;
+  padding: 5px 0;
 }
 #navi ul li a {
   text-decoration: none;
   color: white;
 }
+#breakpoint-playlist {
+  margin-top: 50px;
+}
+#breakpoint-playlist h4 {
+  color: white;
+}
+#add {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#add button {
+  width: 40px;
+  height: 40px;
+  font-size: 26pt;
+}
+#add span {
+  color: white;
+  margin-left: 5px;
+}
+#breakpoint-playlist ul li {
+  padding: 5px 0;
+}
 /* IMMAGINI */
 #spotify {
-  width: 60%;
+  width: 80%;
   height: 100px;
 }
 .h-s-l {
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 27px;
 }
 /* REGOLE CORPO DELLA PAGINA */
 #browse {
   background-color: #141922;
   width: calc(100% - 15%);
   height: calc(100vh - 90px);
+  overflow-y: scroll;
 }
 /* BANNER IN FIXED */
 #upgrade {
@@ -64,9 +86,16 @@ body {
   position: fixed;
 }
 #upgrade button {
+  background-color: transparent;
+  width: 200px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: white;
   position: absolute;
   top: 50%;
-  left: 85%;
+  left: 90%;
+  transform: translate(-50%, -50%);
 }
 /* REGOLE PLAYER */
 #player {
