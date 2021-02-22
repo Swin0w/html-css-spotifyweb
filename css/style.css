@@ -7,8 +7,8 @@
 .container-flex {
   display: flex;
 }
-body {
-  background-color: #141922;
+#navi, #browse {
+  float: left;
 }
 /* REGOLE LATO DELLA PAGINA */
 #navi {
@@ -18,8 +18,9 @@ body {
 }
 /* REGOLE CORPO DELLA PAGINA */
 #browse {
-  position: absolute;
-  z-index: -1;
+  background-color: #141922;
+  height: calc(100vh - 90px);
+  margin-left: 20%;
 }
 /* REGOLE PLAYER */
 #player {
