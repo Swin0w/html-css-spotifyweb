@@ -10,114 +10,71 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-#navi, #browse, #player {
-  float: left;
-}
-/* REGOLE LATO DELLA PAGINA */
-#navi {
-  background-color: #000;
-  width: 15%;
-  height: calc(100vh - 90px);
-}
-#flexible-navi {
-  width: 90%;
-  margin: 0 auto;
-  flex-direction: column;
-}
-#navi ul {
+ul {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-content: center;
 }
-#navi ul li {
-  letter-spacing: 2px;
-  padding: 5px 0;
+li {
+  padding: 7px 0;
 }
-#navi ul li a {
+a {
   text-decoration: none;
   color: white;
 }
-#breakpoint-playlist {
-  margin-top: 50px;
-}
-#breakpoint-playlist h4 {
+/* REGOLE CORPO DELLA PAGINA */
+/* CONTENITORE BLOCCO DI NAVIGAZIONE GENERALE */
+nav {
+  background-color: #000;
+  width: 15%;
+  height: calc(100vh - 90px);
   color: white;
+}
+#column {
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+#general-nav li:first-child {
+  list-style-type:
+}
+#general-nav img, #general-nav span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* BLOCCO DI NAVIGAZIONE PROPRIETARIO PLAYLIST*/
+#create-playlist {
+  margin-top: 20px;
 }
 #add {
   margin: 10px 0;
-  display: flex;
-  align-items: center;
 }
 #add button {
   width: 40px;
   height: 40px;
-  font-size: 26pt;
+  font-size: 20pt;
 }
 #add span {
-  color: white;
-  margin-left: 5px;
+  margin-left: 10px;
 }
-#breakpoint-playlist ul li {
-  padding: 7px 0;
-}
+/* BLOCCO NAVIGAZIONE PROPRIETARIO INFO UTENTE */
 #user-info {
+  justify-content: flex-end;
+}
+/* IMMAGINI NAV */
+#logo {
+  margin: 20px 0;
+  width: 90%;
   height: 70px;
-  margin-top: 100%;
-  margin-bottom: 0;
-  padding: 5px 0;
-  flex-direction: column;
-  justify-content:center;
 }
-/* IMMAGINI */
-#spotify {
-  width: 80%;
-  height: 100px;
-}
-.h-s-l {
+#general-nav img {
   width: 27px;
   height: 27px;
 }
-#download {
+#userinfo img {
   width: 24px;
   height: 24px;
 }
-#profile {
-  width: 20px;
-  height: 20px;
-}
-/* REGOLE CORPO DELLA PAGINA */
-#browse {
-  background-color: #141922;
-  width: calc(100% - 15%);
-  height: calc(100vh - 90px);
-}
-/* BANNER IN FIXED */
-#upgrade {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 90px;
-  justify-content: flex-end;
-  align-items: center;
-  overflow-y: hidden;
-}
-#upgrade button {
-  background-color: transparent;
-  width: 15%;
-  height: 40px;
-  border: 1px solid white;
-  border-radius: 15px;
-  color: white;
-  margin-right: 100px;
-}
-/* NAVIGAZIONE WEB */
-#browse-nav {
-  overflow-y: scroll;
-}
-/* REGOLE PLAYER */
-#player {
+/* PIE' DI PAGINA */
+footer {
   background-color: #282828;
-  width: 100%;
   height: 90px;
 }
