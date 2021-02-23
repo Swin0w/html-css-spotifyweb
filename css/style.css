@@ -20,10 +20,12 @@ a {
   text-decoration: none;
   color: white;
 }
+nav, main {
+  float: left;
+}
 /* REGOLE CORPO DELLA PAGINA */
 /* CONTENITORE BLOCCO DI NAVIGAZIONE GENERALE */
 nav {
-  float: left;
   background-color: #000;
   width: 250px;
   height: calc(100vh - 90px);
@@ -61,7 +63,7 @@ nav {
 }
 /* BLOCCO NAVIGAZIONE PROPRIETARIO INFO UTENTE */
 #user-info {
-  align-content: flex-end;
+  padding-bottom: 20px;
 }
 /* IMMAGINI NAV */
 #logo {
@@ -79,7 +81,6 @@ nav {
 }
 /* CORPO DELLA PAGINA */
 main {
-  float: left;
   background-color: #141922;
   width: calc(100% - 250px);
   height: calc(100vh - 90px);
