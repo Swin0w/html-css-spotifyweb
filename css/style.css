@@ -23,15 +23,17 @@ a {
 /* REGOLE CORPO DELLA PAGINA */
 /* CONTENITORE BLOCCO DI NAVIGAZIONE GENERALE */
 nav {
+  float: left;
   background-color: #000;
-  width: 15%;
+  width: 250px;
   height: calc(100vh - 90px);
   color: white;
 }
 #column {
-  flex-direction: column;
   width: 90%;
   margin: 0 auto;
+  flex-direction: column;
+  display: flex;
 }
 #general-nav li:first-child {
   list-style-type:
@@ -43,6 +45,7 @@ nav {
 /* BLOCCO DI NAVIGAZIONE PROPRIETARIO PLAYLIST*/
 #create-playlist {
   margin-top: 20px;
+  flex-grow: 1;
 }
 #add {
   margin: 10px 0;
@@ -57,7 +60,7 @@ nav {
 }
 /* BLOCCO NAVIGAZIONE PROPRIETARIO INFO UTENTE */
 #user-info {
-  justify-content: flex-end;
+  align-content: flex-end;
 }
 /* IMMAGINI NAV */
 #logo {
@@ -72,6 +75,13 @@ nav {
 #userinfo img {
   width: 24px;
   height: 24px;
+}
+/* CORPO DELLA PAGINA */
+main {
+  float: left;
+  background-color: #141922;
+  width: calc(100% - 250px);
+  height: calc(100vh - 90px);
 }
 /* PIE' DI PAGINA */
 footer {
