@@ -4,8 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container-flex {
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -13,77 +21,74 @@ body {
 ul {
   list-style-type: none;
 }
-li {
+ul li {
   padding: 7px 0;
 }
 a {
   text-decoration: none;
   color: white;
 }
-/* REGOLE CORPO DELLA PAGINA */
-/* CONTENITORE BLOCCO DI NAVIGAZIONE GENERALE */
-nav {
-  background-color: #000;
-  width: 250px;
-  height: calc(100vh - 90px);
+h1, h2, h3, h4, h5, h6, span, p {
   color: white;
 }
-#column {
-  width: 90%;
+/* REGOLE CORPO DELLA PAGINA */
+main {
   height: calc(100vh - 90px);
-  margin: 0 auto;
-  flex-direction: column;
-  display: flex;
 }
-#general-nav li:first-child {
-  list-style-type:
+/* BLOCCO NAVIGAZIONE DELLA WEB APP */
+nav {
+  background-color: #000;
+  width: 220px;
+  height: calc(100vh - 90px);
 }
-#general-nav img, #general-nav span {
-  display: inline-block;
+/* BLOCCO NAVIGAZIONE GENERALE */
+#general-nav {
+  padding: 20px 0;
+}
+#general-nav ul {
+  margin-top: 20px;
+}
+#general-nav .general-nav-img {
+  width: 25px;
+  height: 25px;
+}
+#general-nav .general-nav-img, #general-nav span {
+  line-height: 24px;
   vertical-align: middle;
 }
-/* BLOCCO DI NAVIGAZIONE PROPRIETARIO PLAYLIST*/
-#create-playlist {
-  margin-top: 20px;
+/* BLOCCO NAVIGAZIONE PLAYLIST PERSONALI*/
+#general-nav-myplaylist {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+/* CONTENITORE FUNZIONE AGGIUNTA PLAYLIST */
+#add-playlist {
+  margin: 10px 0;
   flex-grow: 1;
 }
-#add {
-  margin: 10px 0;
-}
-#add button {
+#add-playlist button {
   width: 40px;
   height: 40px;
-  font-size: 20pt;
+  font-weight: bold;
+  font-size: 25pt;
 }
-#add span {
+#add-playlist span {
   margin-left: 10px;
 }
-/* BLOCCO NAVIGAZIONE PROPRIETARIO INFO UTENTE */
-#userinfo {
-  margin: 20px 0;
+#add-playlist button, #add-playlist span {
+  line-height: 40px;
+  vertical-align: middle
 }
-/* IMMAGINI NAV */
-#logo {
-  margin: 20px 0;
-  width: 90%;
-  height: 70px;
+/* ------------------------------------------- */
+/* BLOCCO NAVIGAZIONE INFO UTENTE */
+#general-nav-userinfo img {
+  width: 25px;
+  height: 25px;
 }
-#general-nav img {
-  width: 27px;
-  height: 27px;
-}
-#userinfo img {
-  width: 24px;
-  height: 24px;
-}
-/* CORPO DELLA PAGINA */
-main {
+/* SEZIONE PRINCIPALE */
+section {
   background-color: #141922;
-  width: calc(100% - 250px);
+  width: 100%;
   height: calc(100vh - 90px);
-}
-/* PIE' DI PAGINA */
-footer {
-  background-color: #282828;
-  height: 90px;
 }
