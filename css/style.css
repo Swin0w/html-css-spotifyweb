@@ -9,11 +9,8 @@
   display: table;
   clear: both;
 }
-.container {
-  width: 90%;
-  margin: 0 auto;
+.flex {
   display: flex;
-  flex-direction: column;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -40,6 +37,9 @@ nav {
   background-color: #000;
   width: 220px;
   height: calc(100vh - 90px);
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
 /* BLOCCO NAVIGAZIONE GENERALE */
 #general-nav {
@@ -61,11 +61,11 @@ nav {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 /* CONTENITORE FUNZIONE AGGIUNTA PLAYLIST */
 #add-playlist {
   margin: 10px 0;
-  flex-grow: 1;
 }
 #add-playlist button {
   width: 40px;
@@ -82,6 +82,10 @@ nav {
 }
 /* ------------------------------------------- */
 /* BLOCCO NAVIGAZIONE INFO UTENTE */
+#general-nav-userinfo img, #general-nav-userinfo span {
+  line-height: 25px;
+  vertical-align: middle;
+}
 #general-nav-userinfo img {
   width: 25px;
   height: 25px;
@@ -89,6 +93,12 @@ nav {
 /* SEZIONE PRINCIPALE */
 section {
   background-color: #141922;
-  width: 100%;
+  flex-grow: 1;
   height: calc(100vh - 90px);
+}
+/* PLAYER */
+footer {
+  background-color: #282828;
+  width: 100%;
+  height: 90px;
 }
