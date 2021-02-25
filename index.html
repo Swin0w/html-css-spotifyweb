@@ -2,10 +2,12 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title> Spotify Web Player</title>
   </head>
   <body>
     <main>
@@ -87,14 +89,86 @@
             </div>
         </nav>
         <section>
-          <div id="banner">
+          <div id="banner" class="clearfix">
             <button type="button" name="button">EFFETTUA L'UPGRADE</button>
           </div>
+          <ul id="section-navi">
+            <li>
+              <a href="#">
+                <span class="grey">IN EVIDENZA</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="grey">PODCAST</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="grey">CLASSIFICHE</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="grey">GENERI E MOOD</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="grey">NUOVE USCITE</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="grey">SCOPRI</span>
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
     </main>
     <footer>
+      <div id="info-track">
+        <img src="img/sinister.jpeg" alt="Brano selezionato">
+        <div id="text">
+          <p>Sinister</p>
+          <p class="grey">Brano Nome</p>
+        </div>
+      </div>
+      <div id="like-add">
+        <i class="far fa-heart"></i>
+        <i class="far fa-folder"></i>
+      </div>
+      <div id="player">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-random"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-step-backward"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="far fa-play-circle"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-step-forward"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-undo"></i>
+            </a>
+          </li>
+        </ul>
 
+      </div>
     </footer>
   </body>
 </html>

@@ -96,6 +96,8 @@ section {
   flex-grow: 1;
   height: calc(100vh - 90px);
   display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 /* BANNER */
 #banner {
@@ -114,9 +116,64 @@ section {
   float: right;
   margin-right: 20px;
 }
-/* PLAYER */
+/* BLOCCO NAVIGAZIONE SECTION */
+/* COLORE TESTO NAVI */
+.grey {
+  color: grey;
+}
+/* -------------- */
+#section-navi {
+  flex-direction: row;
+}
+#section-navi ul li {
+  flex
+}
+
+/* PIE' DI PAGINA */
 footer {
   background-color: #282828;
-  width: 100%;
+  flex-grow: 1;
   height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+}
+/* CONTENITORE INFO SULLA TRACCIA IN ASCOLTO */
+#info-track img {
+  width: 60px;
+  height: 60px;
+}
+#info-track img, #text {
+  display: inline-block;
+  vertical-align: middle;
+}
+#text {
+  padding-left: 10px;
+}
+#text p {
+  font-size: 10pt;
+}
+#text p:first-child {
+  font-weight: bold;
+}
+/* ICONE DI LIKE E AGGIUNTA ALLA PLAYLIST */
+#like-add {
+  padding: 25px 0;
+  margin-left: 30px;
+  color: grey;
+}
+#like-add .fa-heart, #like-add .fa-folder {
+  padding: 0 3px;
+}
+/* PLAYER MUSICALE */
+#player {
+  align-content: center;
+}
+#player .fa-play-circle {
+  font-size: 20pt;
+}
+#player ul li {
+  display: inline;
+  padding: 0 7px;
 }
