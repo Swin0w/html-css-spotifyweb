@@ -136,8 +136,12 @@ footer {
   height: 90px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+footer ul li {
+  display: inline;
 }
 /* CONTENITORE INFO SULLA TRACCIA IN ASCOLTO */
 #info-track img {
@@ -157,6 +161,10 @@ footer {
 #text p:first-child {
   font-weight: bold;
 }
+/* INLINE BLOCK */
+#info-track, #like-add {
+  display: inline-block;
+}
 /* ICONE DI LIKE E AGGIUNTA ALLA PLAYLIST */
 #like-add {
   padding: 25px 0;
@@ -167,13 +175,35 @@ footer {
   padding: 0 3px;
 }
 /* PLAYER MUSICALE */
-#player {
-  align-content: center;
+#player button {
+  background-color: transparent;
+  border: none;
+  padding: 0 10px;
+  color: white;
 }
 #player .fa-play-circle {
   font-size: 20pt;
 }
-#player ul li {
-  display: inline;
-  padding: 0 7px;
+
+#status-song {
+  background-color: grey;
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/* BLOCCO CONTENITORE CONTROLLO VOLUME */
+#volume {
+  display: flex;
+}
+#volume-slider {
+  background-color: grey;
+  width: 60px;
+  height: 5px;
+  margin-left: 20px;
+}
+#position {
+  background-color: white;
+  width: 10%;
+  height: 5px;
 }
