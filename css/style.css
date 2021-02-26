@@ -95,15 +95,14 @@ section {
   background-color: #141922;
   flex-grow: 1;
   height: calc(100vh - 90px);
-  display: flex;
-  flex-direction: column;
   overflow-y: scroll;
 }
 /* BANNER */
 #banner {
   background-color: rgba(0, 0, 0, 0.5);
-  flex-grow: 1;
+  width: calc(100% - 220px);
   height: 90px;
+  position: absolute;
 }
 #banner button {
   background-color: transparent;
@@ -114,19 +113,62 @@ section {
   height: 40px;
   margin: 25px 0;
   float: right;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 /* BLOCCO NAVIGAZIONE SECTION */
 /* COLORE TESTO NAVI */
 .grey {
   color: grey;
 }
-/* -------------- */
-#section-navi {
-  flex-direction: row;
+#principal p {
+  color: grey;
+  font-size: 10pt;
+  font-weight: bold;
 }
-#section-navi ul li {
-  flex
+/* -------------- */
+#principal {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+/* BARRA NAVIGAZIONE  */
+#section-navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 120px;
+  margin-bottom: 40px;
+}
+#section-navi li {
+  padding: 0 7px;
+}
+#section-navi li:hover, #section-navi span:hover {
+  border-bottom: 2px solid #acff2f;
+  color: white;
+}
+/* ---------------------------------- */
+.container-album {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin-bottom: 100px;
+}
+.album {
+  width: 250px;
+  height: 250px;
+  padding: 25px;
+  text-align: center;
+}
+.album img {
+  width: 200px;
+  height: 200px;
+}
+.album p {
+  color: grey;
+  font-size: 10pt;
+}
+.container-album:nth-of-type(3) .album img {
+  border-radius: 50%;
 }
 
 /* PIE' DI PAGINA */
