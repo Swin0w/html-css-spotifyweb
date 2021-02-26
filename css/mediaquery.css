@@ -1,0 +1,49 @@
+/* VERSIONE MOBILE */
+/* MEDIA QUERY PER TABLET */
+@media screen and (max-width: 878px) {
+  #section-navi {
+    flex-flow: row wrap;
+  }
+  .container-album {
+    flex-flow: row wrap;
+  }
+}
+
+}
+/* VERSIONE MOBILE SMARTHPHONE MAX-WIDTH: */
+@media screen and (max-width: 565px) {
+  nav {
+    width: 70px;
+  }
+  #general-nav {
+    flex-wrap: wrap;
+  }
+  #general-nav ul li {
+    flex-wrap: wrap;
+  }
+  /* IMMAGINI */
+  #logo-full {
+    display:none;
+  }
+  #logo-small {
+    display: block;
+  }
+
+  /* --------------- */
+  #general-nav ul li {
+    text-align: center;
+  }
+  #general-nav ul li span {
+    display: none;
+  }
+  #general-nav-myplaylist {
+    display: none;
+  }
+  #general-nav-userinfo ul li span, #general-nav-userinfo hr {
+    display: none;
+  }
+  /* BANNER UPGRADE TO PREMIUM */
+  #banner {
+    width: calc(100% - 70px);
+  }
+}
