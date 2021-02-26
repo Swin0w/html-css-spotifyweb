@@ -174,23 +174,52 @@ footer ul li {
 #like-add .fa-heart, #like-add .fa-folder {
   padding: 0 3px;
 }
-/* PLAYER MUSICALE */
-#player button {
+/* BOTTONI PLAYER E VOLUME */
+.foot-button {
   background-color: transparent;
   border: none;
   padding: 0 10px;
   color: white;
 }
+/* BARRA TEMPORANEA PER VEDERE A CHE PUNTO STA LA TRACCIA E IL VOLUME */
+.temp {
+  background-color: white;
+  width: 20%;
+  height: 5px;
+  border-radius: 20px;
+}
+/* PLAYER MUSICALE */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+#player {
+  align-self: center;
+}
 #player .fa-play-circle {
   font-size: 20pt;
 }
-
+#status {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+#status span {
+  font-size: 8pt;
+  font-weight: bold;
+  padding: 0 7px;
+  color: white;
+}
+#status span, #status-song {
+  line-height: 23px;
+  vertical-align: middle;
+}
 #status-song {
   background-color: grey;
-  width: 100%;
+  width: 300px;
   height: 5px;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 /* BLOCCO CONTENITORE CONTROLLO VOLUME */
 #volume {
@@ -198,12 +227,8 @@ footer ul li {
 }
 #volume-slider {
   background-color: grey;
-  width: 60px;
+  width: 90px;
   height: 5px;
   margin-left: 20px;
-}
-#position {
-  background-color: white;
-  width: 10%;
-  height: 5px;
+  align-self: center;
 }
