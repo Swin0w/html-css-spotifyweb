@@ -97,15 +97,16 @@ nav {
 section {
   background-color: #141922;
   flex-grow: 1;
+  width: calc(100% - 220px);
   height: calc(100vh - 90px);
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 /* BANNER */
 #banner {
   background-color: rgba(0, 0, 0, 0.5);
   width: calc(100% - 220px);
   height: 90px;
-  position: absolute;
+  position: fixed;
 }
 #banner button {
   background-color: transparent;
@@ -154,19 +155,21 @@ section {
 .container-album {
   display: flex;
   flex-flow: row wrap;
-  flex-grow: 1;
   margin-bottom: 30px;
 }
 .album {
-  padding: 40px 20px;
+  margin-top: 20px;
+  margin-right: 40px;
+  width: calc(100% / 6);
   text-align: center;
 }
 .album:first-child {
   padding-left: 0;
 }
 .album img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  min-width: 100px;
+  min-height: 100px;
 }
 .album p {
   color: grey;
@@ -191,9 +194,11 @@ footer ul li {
   display: inline;
 }
 /* CONTENITORE INFO SULLA TRACCIA IN ASCOLTO */
+#info-track {
+
+}
 #info-track img {
-  width: 60px;
-  height: 60px;
+  width: 10%;
 }
 #info-track img, #text {
   display: inline-block;

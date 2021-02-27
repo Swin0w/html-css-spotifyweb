@@ -7,8 +7,15 @@
   .container-album {
     flex-flow: row wrap;
   }
-}
-
+  #principal h1, #pricipal p {
+    text-align: center;
+  }
+  .container-album {
+    justify-content: center;
+  }
+  .album {
+    width: calc(100% / 3);
+  }
 }
 /* VERSIONE MOBILE SMARTHPHONE MAX-WIDTH: */
 @media screen and (max-width: 565px) {
@@ -28,8 +35,10 @@
   #logo-small {
     display: block;
   }
-
   /* --------------- */
+  #general-nav {
+    flex-grow: 1;
+  }
   #general-nav ul li {
     text-align: center;
   }
@@ -46,4 +55,19 @@
   #banner {
     width: calc(100% - 70px);
   }
+  #principal h1, #pricipal p {
+    text-align: center;
+  }
+  .container-album {
+    justify-content: center;
+  }
+  .album {
+    width: calc(100% / 2);
+    margin-right: 20px;
+  }
+    /* PIE' DI PAGINA */
+    /* CONTENITORE INFO SULLA TRACCIA IN ASCOLTO */
+    /* #info-track img {
+      width: 10%;
+    } */
 }
