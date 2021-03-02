@@ -128,7 +128,7 @@
                 </a>
               </li>
             </ul>
-            <h1>Recently Played</h1>
+            <h1 id="recently">Recently Played</h1>
             <div class="container-album">
               <div class="album">
                 <img src="img/metal_lifting.jpg" alt="Heavy metal">
@@ -248,5 +248,9 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+    var change = prompt("Come vuoi cambiare il titolo delle tue riproduzione recenti?:" );
+    document.getElementById("recently").innerHTML = change;
+    </script>
   </body>
 </html>
